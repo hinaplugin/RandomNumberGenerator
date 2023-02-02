@@ -1,0 +1,18 @@
+name: RandomNumberGenerator
+version: '${project.version}'
+main: com.hinaplugin.randomnumbergenerator.randomnumbergenerator.RandomNumberGenerator
+api-version: 1.19
+prefix: RNG
+authors: [ hina2113 ]
+description: 乱数ジェネレーター
+
+commands:
+  rng:
+    permission: rng.commands.rng
+    permission-message: You do not have permission perform this commands!
+    description: 乱数を生成する
+    usage: /rng <range1> <range2> <count>
+
+permissions:
+  rng.commands.rng:
+    default: true
