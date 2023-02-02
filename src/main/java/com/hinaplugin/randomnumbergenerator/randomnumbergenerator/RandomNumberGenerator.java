@@ -4,14 +4,11 @@ import org.bukkit.command.PluginCommand;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class RandomNumberGenerator extends JavaPlugin {
-    private static RandomNumberGenerator plugin;
 
     @Override
     public void onEnable() {
         // Plugin startup logic
         try {
-            plugin = this;
-
             PluginCommand rng = getCommand("rng");
             if (rng != null){
                 rng.setExecutor(new Commands());
@@ -32,6 +29,4 @@ public final class RandomNumberGenerator extends JavaPlugin {
             exception.printStackTrace();
         }
     }
-
-    public static RandomNumberGenerator getPlugin(){ return plugin; }
 }
