@@ -30,7 +30,7 @@ public class Commands implements CommandExecutor {
                         builder.append(", ");
                     }
                 }
-                sender.sendMessage(ChatColor.GREEN + String.valueOf(range1) + "から" + range2 + "までの範囲で" + count + "回生成しました．");
+                sender.sendMessage(ChatColor.GREEN + String.valueOf(range1) + "から" + range2 + "までの範囲で" + count + "個生成しました．");
             }else {
                 for (int i = 0; i < count; i++){
                     final Random random = new Random();
@@ -40,7 +40,7 @@ public class Commands implements CommandExecutor {
                         builder.append(", ");
                     }
                 }
-                sender.sendMessage(ChatColor.GREEN + String.valueOf(range2) + "から" + range1 + "までの範囲で" + count + "回生成しました．");
+                sender.sendMessage(ChatColor.GREEN + String.valueOf(range2) + "から" + range1 + "までの範囲で" + count + "個生成しました．");
             }
             sender.sendMessage(builder.toString());
             return true;
