@@ -15,7 +15,7 @@ public class Commands implements CommandExecutor {
         if (args.length == 3){
             if (isNumber(args[0]) || isNumber(args[1]) || isNumeric(args[2])){
                 sender.sendMessage(ChatColor.RED + "usage: /rng <range1> <range2> <count>");
-                sender.sendMessage(ChatColor.RED + "ただし，range及びcountに使えるのは自然数のみです．");
+                sender.sendMessage(ChatColor.RED + "ただし，rangeは整数，countに使えるのは自然数のみです．");
                 return true;
             }
 
