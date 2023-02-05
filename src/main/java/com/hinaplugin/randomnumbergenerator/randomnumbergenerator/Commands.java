@@ -10,6 +10,7 @@ import java.util.Random;
 import java.util.regex.Pattern;
 
 public class Commands implements CommandExecutor {
+    private int sum = 0;
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
         if (args.length == 3){
@@ -23,7 +24,6 @@ public class Commands implements CommandExecutor {
             final int range2 = Integer.parseInt(args[1]);
             final int count = Integer.parseInt(args[2]);
             final StringBuilder builder = new StringBuilder();
-            int sum = 0;
             if (range1 <= range2){
                 for (int i = 0; i < count; i++){
                     final Random random = new Random();
