@@ -41,7 +41,7 @@ public class Commands implements CommandExecutor {
                     final int answer = random.nextInt((range1 - range2) + 1) + range2;
                     sum += answer;
                     builder.append(answer);
-                    if (i == count - 1){
+                    if (i != count - 1){
                         builder.append(", ");
                     }
                 }
