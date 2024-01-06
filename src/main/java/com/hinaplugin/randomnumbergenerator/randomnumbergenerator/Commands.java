@@ -10,9 +10,9 @@ import java.util.Random;
 import java.util.regex.Pattern;
 
 public class Commands implements CommandExecutor {
-    private int sum = 0;
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
+        int sum = 0;
         if (args.length == 3){
             if (isNumber(args[0]) || isNumber(args[1]) || isNumeric(args[2])){
                 sender.sendMessage(ChatColor.RED + "usage: /rng <range1> <range2> <count>");
